@@ -14,8 +14,10 @@ class Bookserializere(serializers.ModelSerializer):
             "FileBook"
         ]
         extra_kwargs = {
+            "title": {"required":False},
             "isbn": {"required":False},
             "num_pages":{"required":False},
+            "publish_date":{"required":False}
         }
             
      

@@ -8,7 +8,7 @@ class Book(models.Model):
     num_pages= models.IntegerField(default=0)
     isbn = models.CharField(max_length=13,blank=True, null=True )
     publish_date =models.IntegerField(default=0,blank=True, null =True)
-    FileBook = models.FileField(default='', blank= False, null=False )
+    FileBook = models.FileField(default='', blank= True, null=True )
     
     
     def __str__ (self):
